@@ -1,0 +1,23 @@
+@import "./scss/bootstrap";
+@import "./scss/header";
+@import "./scss/home";
+.themeButton {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    background-color: transparent;
+    background-image: linear-gradient(198deg, #000099b5 0%, #33ccff 100%);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #437fec;
+    transition: 0.4s;
+}
+.themeButton:hover {
+    color: #437fec;
+    border: 2px solid #437fec !important;
+    background-color: white !important;
+    background-image: none;
+}
+.common-margin {
+    margin-top: 100px;
+}
