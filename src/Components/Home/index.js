@@ -8,7 +8,11 @@ import Tabs from './Tabs';
 import Slider from './Slider';
 import Hero2 from './Hero2';
 import Hero3 from './Hero3';
-// import Elementor from './Elementor';
+import Elementor from './Elementor';
+import Footer from "../Footer"
+import Blog from './Blog';
+import Testimonials from './Testimons';
+import Contact from './Contact';
 export default function index() {
     return (
         <>
@@ -21,7 +25,11 @@ export default function index() {
             <Slider />
             <Hero2 />
             <Hero3 />
-            {/* <Elementor /> */}
+            <Elementor />
+            <Blog />
+            <Testimonials />
+            <Contact />
+            <Footer />
         </>
     )
 }

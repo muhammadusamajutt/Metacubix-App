@@ -171,18 +171,18 @@
     .icon-image0 {
         padding: 20px;
         border-radius: 50%;
-        background: transparent;
-        background-image: linear-gradient(60deg, #000099b5 0%, #3cf 100%);
-        margin-top: 17px;
+        margin-top: 10px;
         text-align: center;
+        background-color: #437fec !important;
+        border: 2px solid #437fec !important;
     }
     .icon-image01 {
-        margin-top: 17px;
+        margin-top: 10px;
         text-align: center;
         padding: 35px;
         border-radius: 50%;
-        background: transparent;
-        background-image: linear-gradient(60deg, #000099b5 0%, #3cf 100%);
+        background-color: #437fec !important;
+        border: 2px solid #437fec !important;
     }
     .icon-div {
         border-radius: 50%;
@@ -194,6 +194,12 @@
     }
     .border-hover:hover .icon-div {
         border-color: #437fec !important;
+    }
+    .border-hover:hover .icon-image01,
+    .border-hover:hover .icon-image0 {
+        border: 2px solid #437fec !important;
+        background-color: #104cba33 !important;
+        background-image: none;
     }
 }
 .tabs-home {
@@ -447,5 +453,225 @@
                 font-size: 18px !important;
             }
         }
+    }
+}
+.statsSection {
+    .icons {
+        font-size: 47px;
+        padding: 21px;
+        margin-right: 25px;
+        background: #104cba;
+        border-radius: 20px;
+        border: 2px solid #437fec !important;
+        color: #fff;
+        transition: 0.4s;
+    }
+    .ionic:hover .icons {
+        color: #437fec;
+        border: 2px solid #437fec !important;
+        background-color: white !important;
+        background-image: none;
+    }
+    .countNumber {
+        font-size: 40px;
+    }
+    .ionic:hover .countNumber {
+        color: #437fec;
+    }
+    .text-text {
+        color: #000000;
+        font-family: "Inter", Sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+.blog {
+    .first-text {
+        font-family: "Inter", Sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #437fec;
+        margin-bottom: 6px;
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .card-image {
+        max-width: 100%;
+        border-start-start-radius: 20px;
+        border-top-right-radius: 20px;
+        opacity: 1;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+    .custom-card {
+        border: 5px solid transparent;
+        border-radius: 26px;
+        transition: 0.4s;
+    }
+    .card-data {
+        padding: 25px;
+        background-color: #437fec !important;
+        color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: 0.4s;
+    }
+    .date,
+    .name {
+        font-size: 20px;
+        transition: 0.4s;
+    }
+    svg {
+        fill: white;
+        transition: 0.4s;
+    }
+    .read-more {
+        color: white;
+        transition: 0.4s;
+        font-weight: 800;
+    }
+    .description {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 32px;
+        transition: 0.4s;
+    }
+    .custom-card:hover {
+        border-color: #437fec !important;
+    }
+
+    .custom-card:hover svg {
+        fill: #437fec !important;
+    }
+    .custom-card:hover .date {
+        color: #437fec !important;
+    }
+    .custom-card:hover .name {
+        color: #437fec !important;
+    }
+    .custom-card:hover .description {
+        color: #437fec !important;
+    }
+    .custom-card:hover .read-more {
+        color: #437fec !important;
+    }
+    .custom-card:hover .card-data {
+        background-color: white !important;
+    }
+    .custom-card:hover .card-image {
+        opacity: 0.7;
+    }
+}
+.testimonials {
+    @import url("https://fonts.googleapis.com/css?family=Gugi");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .testimonials-container {
+        font-family: "Gugi";
+        font-size: 20px;
+        color: #fff;
+        background-color: #437fec;
+        max-width: 700px;
+        margin: 20px 0;
+        padding: 50px 80px;
+        border-radius: 15px;
+        position: relative;
+        border: 2px solid #437fec !important;
+    }
+
+    .testimonial {
+        line-height: 28px;
+        text-align: justify;
+    }
+
+    .centered-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .user-details {
+        margin-left: 10px;
+    }
+
+    .username {
+        margin: 0;
+    }
+
+    .role {
+        font-weight: normal;
+        margin: 2px 0;
+    }
+
+    .progress-bar {
+        background: #fff;
+        width: 100%;
+        height: 4px;
+        animation: grow 5s linear infinite;
+        transform-origin: left;
+    }
+
+    @keyframes grow {
+        from {
+            transform: scaleX(0);
+        }
+    }
+
+    .fa-quote {
+        position: absolute;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 0.4);
+        top: 80px;
+    }
+
+    .fa-quote-left {
+        left: 40px;
+    }
+
+    .fa-quote-right {
+        right: 40px;
+    }
+
+    @media (max-width: 768px) {
+        .testimonials-container {
+            padding: 20px 20px;
+            font-size: 16px;
+        }
+
+        // .fa-quote {
+        //     display: none;
+        // }
+    }
+
+    @media (max-width: 376px) {
+        .testimonial {
+            line-height: 20px;
+            margin: 10px auto;
+        }
+    }
+    .testimonials-container:hover {
+        color: #437fec;
+        border: 2px solid #437fec !important;
+        background-color: white !important;
+    }
+    .testimonials-container:hover .progress-bar {
+        color: #437fec;
+        border: 2px solid #437fec !important;
+        background-color: white !important;
+    }
+    .testimonials-container:hover .fa-quote {
+        color: #437fec;
     }
 }
